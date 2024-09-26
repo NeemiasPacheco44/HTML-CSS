@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="perfil.png" type="image/x-icon">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+<h1>Imagem dinámica</h1>
+<p>tente abrir site em varios dispositivos diferentes ou 
+    simplesmente aumenta dimminua o tamanho do seu navegaor </p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="IMAGEM/foto_p.png" 
+        type="image/png">
+        <source media="(max-width: 1050px)" srcset="IMAGEM/foto_m.png"
+        type="image/png">
+         <img src="IMAGEM/foto_g.png" alt=" Imagem flexivel">
+    </picture>
+   
+<h1>Inserindo audio no seu site</h1>
+
+<audio src="midias/Vibe_Eren.mp3.mp3" autoplay controls > </audio>
+<a href="midias/Vibe_Eren.mp3.mp3">Dowland</a>
+</body>
+ <br>
+<audio  preload="auto" autoplay controls loop >
+    <source src="midias/Vibe_Eren.mp3.mp3" type="audio/mpeg">
+    <source src="midias/Vibe_Eren.mp3.ogg" type="audio/ogg">
+    <source src="midias/Vibe_Eren.mp3.wav" type="audio/wav">
+    <p>Infelizmente o teu Nagador não pode reproduzir audio</p>
+</audio>
+</html>
